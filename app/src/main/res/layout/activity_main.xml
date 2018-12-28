@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="1196dp"
+        android:layout_width="1857dp"
         android:layout_height="1151dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -20,8 +20,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.475"
-        app:srcCompat="@drawable/weatherimg" />
+        app:layout_constraintVertical_bias="0.38"
+        app:srcCompat="@drawable/wthrimg" />
 
     <TextView
         android:id="@+id/textView"
@@ -101,6 +101,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:alpha="0"
+        android:gravity="center"
         android:text="Temperature"
         android:textColor="@android:color/background_light"
         android:textSize="30dp"
@@ -109,7 +110,7 @@
         app:layout_constraintHorizontal_bias="0.185"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.661" />
+        app:layout_constraintVertical_bias="0.726" />
 
     <TextView
         android:id="@+id/temp2"
@@ -122,14 +123,15 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:alpha="0"
+        android:gravity="center"
         android:textColor="@android:color/background_light"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.972"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.661" />
+        app:layout_constraintVertical_bias="0.726" />
 
     <TextView
         android:id="@+id/wind"
@@ -142,6 +144,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:alpha="0"
+        android:gravity="center"
         android:text="Wind Speed"
         android:textColor="@android:color/background_light"
         android:textSize="30dp"
@@ -150,7 +153,7 @@
         app:layout_constraintHorizontal_bias="0.185"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.769" />
+        app:layout_constraintVertical_bias="0.834" />
 
     <TextView
         android:id="@+id/wind2"
@@ -163,14 +166,15 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:alpha="0"
+        android:gravity="center"
         android:textColor="@android:color/background_light"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.972"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.769" />
+        app:layout_constraintVertical_bias="0.834" />
 
     <TextView
         android:id="@+id/humidity2"
@@ -183,14 +187,15 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:alpha="0"
+        android:gravity="center"
         android:textColor="@android:color/background_light"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.972"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884" />
+        app:layout_constraintVertical_bias="0.95" />
 
     <TextView
         android:id="@+id/humidity"
@@ -203,6 +208,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:alpha="0"
+        android:gravity="center"
         android:text="Humidity"
         android:textColor="@android:color/background_light"
         android:textSize="30dp"
@@ -211,6 +217,6 @@
         app:layout_constraintHorizontal_bias="0.185"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.884" />
+        app:layout_constraintVertical_bias="0.95" />
 
 </android.support.constraint.ConstraintLayout>

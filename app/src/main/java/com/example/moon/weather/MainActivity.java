@@ -17,6 +17,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
+    int flag=0;
     EditText cityName;
     String temperatureinfo,humidityinfo,pressureinfo,basicinfo,windinfo;
     TextView temp,temp2,humidity,humidity2,basicDescription,wind,wind2;
@@ -58,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
             wind2.animate().alpha(0).setDuration(0l);
             humidity2.animate().alpha(0).setDuration(0l);
             basicDescription.animate().alpha(0).setDuration(0l);
+            if(flag==1){
+                basicDescription.animate().translationY(-100f);
+                flag=0;
+            }
 
             try{
                JSONObject jsonObject=new JSONObject(result);
@@ -103,8 +108,9 @@ public class MainActivity extends AppCompatActivity {
             }
             catch (Exception e){
                 e.printStackTrace();
-                basicDescription.setText("Please Enter A Valid City Name");
-                basicDescription.animate().alpha(1).setDuration(500);
+                basicDescription.setText("Please Enter A Valid City Name or Check Your Internet Connection");
+                basicDescription.animate().alpha(1).translationY(300f).setDuration(500);
+                flag=1;
             }
 
 
@@ -141,6 +147,10 @@ public class MainActivity extends AppCompatActivity {
         wind2.animate().alpha(0).setDuration(0l);
         humidity2.animate().alpha(0).setDuration(0l);
         basicDescription.animate().alpha(0).setDuration(0l);
+        if(flag==1){
+            basicDescription.animate().translationY(-100f);
+            flag=0;
+        }
 
         Log.i("city Name",cityName.getText().toString());
         DownloadTask task=new DownloadTask();
